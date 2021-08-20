@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2021.2.3">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="ptb" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data file delimiter" updates="None" val="auto" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant': ''}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="False" valType="bool"/>
+    <Param name="HTML path" updates="None" val="" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Resources" updates="None" val="[]" valType="list"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save hdf5 file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="True" valType="bool"/>
+    <Param name="Units" updates="None" val="height" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[1440, 960]" valType="list"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="color"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="elAddress" updates="None" val="100.1.1.1" valType="str"/>
+    <Param name="elDataFiltering" updates="None" val="FILTER_LEVEL_2" valType="str"/>
+    <Param name="elLiveFiltering" updates="None" val="FILTER_LEVEL_OFF" valType="str"/>
+    <Param name="elModel" updates="None" val="EYELINK 1000 DESKTOP" valType="str"/>
+    <Param name="elPupilAlgorithm" updates="None" val="ELLIPSE_FIT" valType="str"/>
+    <Param name="elPupilMeasure" updates="None" val="PUPIL_AREA" valType="str"/>
+    <Param name="elSampleRate" updates="None" val="1000" valType="num"/>
+    <Param name="elSimMode" updates="None" val="False" valType="bool"/>
+    <Param name="elTrackEyes" updates="None" val="RIGHT_EYE" valType="str"/>
+    <Param name="elTrackingMode" updates="None" val="PUPIL_CR_TRACKING" valType="str"/>
+    <Param name="expName" updates="None" val="jinhu_rusheng" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="eyetracker" updates="None" val="None" valType="str"/>
+    <Param name="gpAddress" updates="None" val="127.0.0.1" valType="str"/>
+    <Param name="gpPort" updates="None" val="4242" valType="num"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+    <Param name="mgBlink" updates="None" val="('MIDDLE_BUTTON',)" valType="list"/>
+    <Param name="mgMove" updates="None" val="CONTINUOUS" valType="str"/>
+    <Param name="mgSaccade" updates="None" val="0.5" valType="num"/>
+    <Param name="tbLicenseFile" updates="None" val="" valType="str"/>
+    <Param name="tbModel" updates="None" val="" valType="str"/>
+    <Param name="tbSampleRate" updates="None" val="60" valType="num"/>
+    <Param name="tbSerialNo" updates="None" val="" valType="str"/>
+  </Settings>
+  <Routines>
+    <Routine name="instruct">
+      <TextComponent name="instruction">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
+        <Param name="name" updates="None" val="instruction" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="欢迎参加实验！&amp;#10;&amp;#10;接下来，您将听到很多字的读音&amp;#10;同时屏幕上一左一右会呈现两个汉字&amp;#10;如果读音更像左边的字，请按←键&amp;#10;如果读音更像右边的字，请按→键&amp;#10;如果您无法判断或者觉得都不像，请按↓键&amp;#10;&amp;#10;按空格键开始实验!" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="trial">
+      <TextComponent name="left_word_tip">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="num"/>
+        <Param name="name" updates="None" val="left_word_tip" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(-0.2, 0.2)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$left_word" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <TextComponent name="right_word_tip">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="num"/>
+        <Param name="name" updates="None" val="right_word_tip" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0.2, 0.2)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$right_word" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <TextComponent name="tip">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
+        <Param name="name" updates="None" val="tip" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, -0.2)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="←像左边   ↓不确定   →像右边" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="operate">
+        <Param name="allowedKeys" updates="set every repeat" val="'left','right','down'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="$correct_ans" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="operate" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <SoundComponent name="my_sound_play">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="2" valType="code"/>
+        <Param name="hamming" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="my_sound_play" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="sound" updates="set every repeat" val="$my_sound" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+        <Param name="volume" updates="constant" val="3" valType="num"/>
+      </SoundComponent>
+    </Routine>
+    <Routine name="thanks">
+      <TextComponent name="thank_word">
+        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="contrast" updates="constant" val="1" valType="num"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="None" valType="str"/>
+        <Param name="font" updates="constant" val="Open Sans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
+        <Param name="name" updates="None" val="thank_word" valType="code"/>
+        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="ori" updates="constant" val="0" valType="num"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="非常感谢您的参与！&amp;#10;&amp;#10;您的付出会对我们的研究起到巨大帮助！&amp;#10;&amp;#10;按空格键退出实验" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="list"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="instruct"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'my_sound': 'sounds\\ba_0d5.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'left'}, {'my_sound': 'sounds\\ba_0d6.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'left'}, {'my_sound': 'sounds\\ba_0d7.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'left'}, {'my_sound': 'sounds\\ba_0d8.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'left'}, {'my_sound': 'sounds\\ba_0d9.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'left'}, {'my_sound': 'sounds\\ba_1d0.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'left'}, {'my_sound': 'sounds\\bae_1d0.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bae_1d1.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bae_1d2.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bae_1d3.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bae_1d4.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bae_1d5.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bae_1d6.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bae_1d7.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bae_1d8.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bae_1d9.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bae_2d0.wav', 'left_word': '坝', 'right_word': '剥', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bai_1d0.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bai_1d1.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bai_1d2.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bai_1d3.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bai_1d4.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bai_1d5.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bai_1d6.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bai_1d7.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bai_1d8.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bai_1d9.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bai_2d0.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'right'}, {'my_sound': 'sounds\\bao_0d5.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'left'}, {'my_sound': 'sounds\\bao_0d6.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'left'}, {'my_sound': 'sounds\\bao_0d7.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'left'}, {'my_sound': 'sounds\\bao_0d8.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'left'}, {'my_sound': 'sounds\\bao_0d9.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'left'}, {'my_sound': 'sounds\\bao_1d0.wav', 'left_word': '抱', 'right_word': '白', 'correct_ans': 'left'}, {'my_sound': 'sounds\\ge_1d0.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ge_1d1.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ge_1d2.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ge_1d3.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ge_1d4.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ge_1d5.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ge_1d6.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ge_1d7.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ge_1d8.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ge_1d9.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ge_2d0.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'right'}, {'my_sound': 'sounds\\guo_0d5.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'left'}, {'my_sound': 'sounds\\guo_0d6.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'left'}, {'my_sound': 'sounds\\guo_0d7.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'left'}, {'my_sound': 'sounds\\guo_0d8.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'left'}, {'my_sound': 'sounds\\guo_0d9.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'left'}, {'my_sound': 'sounds\\guo_1d0.wav', 'left_word': '过', 'right_word': '鸽', 'correct_ans': 'left'}, {'my_sound': 'sounds\\jiao_0d5.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'left'}, {'my_sound': 'sounds\\jiao_0d6.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'left'}, {'my_sound': 'sounds\\jiao_0d7.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'left'}, {'my_sound': 'sounds\\jiao_0d8.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'left'}, {'my_sound': 'sounds\\jiao_0d9.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'left'}, {'my_sound': 'sounds\\jiao_1d0.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'left'}, {'my_sound': 'sounds\\ju_1d0.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ju_1d1.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ju_1d2.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ju_1d3.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ju_1d4.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ju_1d5.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ju_1d6.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ju_1d7.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ju_1d8.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ju_1d9.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ju_2d0.wav', 'left_word': '叫', 'right_word': '局', 'correct_ans': 'right'}, {'my_sound': 'sounds\\kua_0d5.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'left'}, {'my_sound': 'sounds\\kua_0d6.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'left'}, {'my_sound': 'sounds\\kua_0d7.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'left'}, {'my_sound': 'sounds\\kua_0d8.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'left'}, {'my_sound': 'sounds\\kua_0d9.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'left'}, {'my_sound': 'sounds\\kua_1d0.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'left'}, {'my_sound': 'sounds\\kuo_1d0.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'right'}, {'my_sound': 'sounds\\kuo_1d1.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'right'}, {'my_sound': 'sounds\\kuo_1d2.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'right'}, {'my_sound': 'sounds\\kuo_1d3.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'right'}, {'my_sound': 'sounds\\kuo_1d4.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'right'}, {'my_sound': 'sounds\\kuo_1d5.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'right'}, {'my_sound': 'sounds\\kuo_1d6.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'right'}, {'my_sound': 'sounds\\kuo_1d7.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'right'}, {'my_sound': 'sounds\\kuo_1d8.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'right'}, {'my_sound': 'sounds\\kuo_1d9.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'right'}, {'my_sound': 'sounds\\kuo_2d0.wav', 'left_word': '跨', 'right_word': '扩', 'correct_ans': 'right'}, {'my_sound': 'sounds\\ya_0d5.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'left'}, {'my_sound': 'sounds\\ya_0d6.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'left'}, {'my_sound': 'sounds\\ya_0d7.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'left'}, {'my_sound': 'sounds\\ya_0d8.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'left'}, {'my_sound': 'sounds\\ya_0d9.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'left'}, {'my_sound': 'sounds\\ya_1d0.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'left'}, {'my_sound': 'sounds\\yao_1d0.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'right'}, {'my_sound': 'sounds\\yao_1d1.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'right'}, {'my_sound': 'sounds\\yao_1d2.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'right'}, {'my_sound': 'sounds\\yao_1d3.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'right'}, {'my_sound': 'sounds\\yao_1d4.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'right'}, {'my_sound': 'sounds\\yao_1d5.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'right'}, {'my_sound': 'sounds\\yao_1d6.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'right'}, {'my_sound': 'sounds\\yao_1d7.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'right'}, {'my_sound': 'sounds\\yao_1d8.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'right'}, {'my_sound': 'sounds\\yao_1d9.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'right'}, {'my_sound': 'sounds\\yao_2d0.wav', 'left_word': '亚', 'right_word': '药', 'correct_ans': 'right'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="conditions.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="3" valType="num"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="trial"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="thanks"/>
+  </Flow>
+</PsychoPy2experiment>
